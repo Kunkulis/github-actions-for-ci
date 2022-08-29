@@ -8,9 +8,9 @@
     "src": "src"
   },
   "scripts": {
-    "build": "npx webpack --config ./src/webpack.config.js --mode production",
-    "dev": "npx webpack --config ./src/webpack.config.js --mode development --watch",
-    "test": "npx standard && npx jest"
+    "build": "npx webpack --config ./src/webpack.config.js --mode production --passWithNoTests",
+    "dev": "npx webpack --config ./src/webpack.config.js --mode development --watch --passWithNoTests",
+    "test": "npx standard && npx jest --passWithNoTests"
   },
   "author": "githubtraining",
   "license": "MIT",
